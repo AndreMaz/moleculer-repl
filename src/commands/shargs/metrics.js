@@ -2,7 +2,7 @@ const kleur 							= require("kleur");
 const _ 								= require("lodash");
 const { table, getBorderCharacters } 	= require("table");
 
-const { flag, subcommand, string } = require("shargs-opts");
+const { flag, subcommand, string } = require('shargs/opts');
 const { wrapper } = require("../../usage/help")
 
 const subCommandOpt = subcommand([

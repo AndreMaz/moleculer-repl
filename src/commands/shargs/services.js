@@ -3,7 +3,7 @@ const _ 				= require("lodash");
 const { table, getBorderCharacters } 	= require("table");
 const { match } 		= require("../../utils");
 
-const { flag, subcommand, string } = require("shargs-opts");
+const { flag, subcommand, string } = require('shargs/opts');
 const { wrapper } = require("../../usage/help")
 
 /**

@@ -1,6 +1,6 @@
 const kleur 			= require("kleur");
 const { convertArgs } 	= require("../../utils");
-const { flag, subcommand, stringPos, string, variadicPos } = require("shargs-opts");
+const { flag, subcommand, stringPos, string, variadicPos } = require('shargs/opts');
 const { wrapper } = require("../../usage/help")
 const _ = require('lodash')
 

@@ -6,7 +6,7 @@ const util 				= require("util");
 const { convertArgs } 	= require("../../utils");
 const humanize 			= require("tiny-human-time").short;
 const isStream			= require("is-stream");
-const { flag, subcommand, stringPos, string, variadicPos } = require("shargs-opts");
+const { flag, subcommand, stringPos, string, variadicPos } = require('shargs/opts');
 const { wrapper } = require("../../usage/help")
 
 /**

@@ -1,6 +1,6 @@
 const {
 	variadic,
-} = require("shargs-opts");
+} = require('shargs/opts');
 const {
 	desc,
 	optsDef,
@@ -8,7 +8,7 @@ const {
 	space,
 	synopsis,
 	usage,
-} = require("shargs-usage");
+} = require('shargs/usage');
 
 function handler(commands, broker, command) {
 	const subDocs = usage([synopsis, space, optsDef, space, desc]);

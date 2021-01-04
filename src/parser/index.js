@@ -1,4 +1,4 @@
-const {fromArgs: fromArgsDefault, lexerSync, parserSync} = require('shargs')
+const {fromArgs: fromArgsDefault, parserSync} = require('shargs')
 const {arrayOnRepeat, bestGuessCast, equalsSignAsSpace, flagsAsBools, requireOpts, suggestOpts} = require('shargs-parser')
 const {adjustErrMessages} = require('./adjustErrMessages')
 const {bestGuess} = require('./bestGuess')
@@ -7,7 +7,7 @@ const {nestKeys} = require('./nestKeys')
 const {removeRest} = require('./removeRest')
 const {strToArgv} = require('./strToArgv')
 
-const lexer = lexerSync({
+const lexer = parserSync({
   toArgv
 })
 

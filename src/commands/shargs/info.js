@@ -1,4 +1,4 @@
-const { subcommand, flag } = require("shargs-opts");
+const { subcommand, flag } = require('shargs/opts');
 const { wrapper } = require('../../usage/help')
 const kleur 			= require("kleur");
 const _ 				= require("lodash");
