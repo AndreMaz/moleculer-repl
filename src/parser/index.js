@@ -8,7 +8,9 @@ const {removeRest} = require('./removeRest')
 const {strToArgv} = require('./strToArgv')
 
 const lexer = parserSync({
-  toArgv
+  toArgv,
+  toArgs:   ({errs, opts}) => ({errs, args: opts}),
+  fromArgs: ({errs, args}) => ({errs, opts: args})
 })
 
 const parser = cmd => rawCommand => parserSync({
